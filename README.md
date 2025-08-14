@@ -36,8 +36,8 @@ For manual installation:
 
 ## Contributing
 
-PakSeek is a **restricted open-source** project.  
-Those interested in contributing should **apply first** to get access to the repository, similar to Unreal Engine's contribution model.
+PakSeek is a **Source-Open** project. 
+Interested Contributors can apply.
 
 ## License
 
