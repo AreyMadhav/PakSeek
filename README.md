@@ -4,7 +4,7 @@ PakSeek is a powerful and lightweight PAK file scanning and viewing tool built f
 This tool allows you to quickly locate `.pak` files in a given directory, inspect their metadata, and prepare for future capabilities like extraction.
 
 ## Caution
-It's Still Under-Development
+It's Still Under-Development - Expect a Stable Release by 20th August 2025
 
 ## Features
 
