@@ -1,0 +1,13 @@
+{
+  "name": "unreal-engine-mapper",
+  "version": "0.1.0",
+  "description": "Unreal Engine Asset Explorer and Dependency Mapper",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.6.0"
+  }
+}

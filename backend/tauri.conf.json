@@ -1,0 +1,52 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "cd frontend && pnpm run build",
+    "beforeDevCommand": "cd frontend && pnpm run dev",
+    "devPath": "http://localhost:5173",
+    "distDir": "../frontend/dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "Unreal Asset Explorer",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "protocol": {
+        "all": true,
+        "asset": true,
+        "assetScope": []
+      }
+    },
+    "bundle": {
+      "active": true,
+      "icon": [
+        "icons/icon.ico"
+      ],
+      "identifier": "com.unrealassetexplorer.app",
+      "targets": "all"
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "decorations": false,
+        "fullscreen": false,
+        "height": 800,
+        "minHeight": 600,
+        "minWidth": 800,
+        "resizable": true,
+        "title": "Unreal Asset Explorer",
+        "transparent": true,
+        "width": 1200
+      }
+    ]
+  }
+}

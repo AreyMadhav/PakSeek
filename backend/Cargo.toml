@@ -1,0 +1,41 @@
+[package]
+name = "unreal-asset-explorer-backend"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = [] }
+
+[dependencies]
+# Tauri dependencies
+tauri = { version = "2.0", features = ["tray-icon", "image-ico", "image-png"] }
+tauri-plugin-window-state = "2.0"
+tauri-plugin-shell = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# HTTP server dependencies (for future use)
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "fs"] }
+
+# Utility dependencies
+base64 = "0.22"
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Future dependencies for file parsing (currently unused)
+# nom = "7.1"  # For binary parsing
+# memmap2 = "0.9"  # For memory-mapped file access
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[[bin]]
+name = "unreal-asset-explorer"
+path = "main.rs"
