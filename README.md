@@ -39,10 +39,7 @@ For manual installation:
 
 ## Contributing
 
-- Author: @AreyMadhav | IDevSec  
-Contributors:  
-
-- [List contributors here]
+- Author: @AreyMadhav | IDevSec 
 
 ## License
 
