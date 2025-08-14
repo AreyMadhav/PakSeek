@@ -3,6 +3,9 @@
 PakSeek is a powerful and lightweight PAK file scanning and viewing tool built for OpenSUSE.
 This tool allows you to quickly locate `.pak` files in a given directory, inspect their metadata, and prepare for future capabilities like extraction.
 
+## Caution
+It's Still Under-Development
+
 ## Features
 
 - Offline support — no internet connection required.
